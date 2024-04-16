@@ -11,29 +11,26 @@ public class CheckAge {
 	public static void main(String[] args) {
 		
 		//Create Scanner Object for user input
-		Scanner sc = new Scanner(System.in);
+		
+		Scanner scanner = new Scanner(System.in);
 		
 		System.out.println("Enter Your Age:");
-		int age = sc.nextInt();
+		int age = scanner.nextInt();
 		
 		//Check age using if/else statements
-		if(age<0)
-		{
+		
+		if (age<0) {
 			System.out.println("Invalid Age.");
 		}
-		else if(age<18)
-		{
+		else if (age<18){
 			System.out.println("You are minor");
 		}
-		else if(age<60)
-		{
+		else if(age<60) {
 			System.out.println("You are an adult.");
 		}
-		else
-		{
+		else {
 			System.out.println("You are a senior citizen");
 		}
-		
 		
 	}
 }
