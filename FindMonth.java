@@ -8,18 +8,19 @@ import java.util.Scanner;
  *
  */
 public class FindMonth {
+
 	public static void main(String[] args) {
 	
-		//Create Scanner Object for user input
+		// Create Scanner Object for user input
 		
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.println("Enter a Number:");
 		int month = scanner.nextInt();
 		
-		//switch case to find appropriate
+		// Switch case to find appropriate Month
 		
-		switch(month) {
+		switch (month) {
 			case 1:
 				System.out.println("January");
 				break;
@@ -59,7 +60,7 @@ public class FindMonth {
 			default:
 				System.out.println("Invalid Number! \nPlease enter a number between 1 to 12.");
 				break;
-		}
-		
+		}	
 	}
+
 }
