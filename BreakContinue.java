@@ -16,8 +16,8 @@ public class BreakContinue {
 	public void BreakStatements() {
 		System.out.println("\nOutput of Break Statement :");
 
-		for(int i = 1; i <= UPPER_LIMIT; i++) {
-			if(i == 8) {
+		for (int i = 1; i <= UPPER_LIMIT; i++) {
+			if (i == 8) {
 				break; // Stops the iteration when the if condition is satisfied
 			}
 			System.out.println(i);
@@ -30,8 +30,8 @@ public class BreakContinue {
 	public void ContinueStatements() {
 		System.out.println("\nOutput of Continue Statement :");
 
-		for(int i = 1; i <= UPPER_LIMIT; i++) {
-			if(i == 8) {
+		for (int i = 1; i <= UPPER_LIMIT; i++) {
+			if (i == 8) {
 				continue; // Skips the current iteration and goes to next iteration of loop
 			}
 			System.out.println(i);

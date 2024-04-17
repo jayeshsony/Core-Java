@@ -5,7 +5,7 @@ package tasks;
  * @author Jayesh Soni
  * @since 2024-04-17
  */
-public class Circle {
+public class CircleAreaCalculator {
 
 	// Constant for PI
 	private final double PI = 3.14f;
@@ -16,7 +16,7 @@ public class Circle {
 	/**
 	 * This default constructor sets the default radius of 0.0
 	 */
-	public Circle(){
+	public CircleAreaCalculator() {
 		radius = 0;
 	}
 
@@ -24,7 +24,7 @@ public class Circle {
 	 * This parameterized constructor sets the specified radius
 	 * @param radius the radius of circle
 	 */
-	public Circle(double radius){
+	public CircleAreaCalculator(double radius) {
 		this.radius = radius;
 	}
 
@@ -39,12 +39,12 @@ public class Circle {
 
 	public static void main(String[] args) {
 		// Create Object of Circle class that calls default constructor
-		Circle circleObject1 = new Circle();
-		System.out.println("Aria of circle with default radius = " + circleObject1.CalculateArea());
+		CircleAreaCalculator CircleAreaCalculatorObject1 = new CircleAreaCalculator();
+		System.out.println("Area of circle with default radius = " + CircleAreaCalculatorObject1.CalculateArea());
 
 		// Create Object of Circle class that calls parameterized constructor
-		Circle circleObject2 = new Circle(5.0);
-		System.out.println("Aria of circle with specified radius = " + circleObject2.CalculateArea());
+		CircleAreaCalculator CircleAreaCalculatorObject2 = new CircleAreaCalculator(5.0);
+		System.out.println("Area of circle with specified radius = " + CircleAreaCalculatorObject2.CalculateArea());
 	}
 
 }

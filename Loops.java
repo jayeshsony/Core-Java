@@ -14,12 +14,12 @@ public class Loops {
 	 * This Method prints numbers from 1 to 10  using While Loop
 	 */
 	public void whileLoop() {
-		int lowerLimit = 1 ;
+		int lowerLimit = 1;
 
 		System.out.println("\nPrinting values using While Loop");
 
 		// Create While loop to print numbers from 1 to 10
-		while ( lowerLimit <= UPPER_LIMIT ) {
+		while (lowerLimit <= UPPER_LIMIT) {
 			System.out.println(lowerLimit);
 			lowerLimit++;
 		}
@@ -29,7 +29,7 @@ public class Loops {
 	 * This Method prints numbers from 1 to 10  using Do-While Loop
 	 */
 	public void doWhileLoop() {
-		int lowerLimit = 1 ;
+		int lowerLimit = 1;
 
 		System.out.println("\nPrinting values using Do-While Loop");
 
@@ -42,13 +42,13 @@ public class Loops {
 
 	public static void main(String[] args) {
 		// Create object of the loops class
-		Loops loopObject = new Loops();
+		Loops loopsObject = new Loops();
 		
 		// Call the whileLoop method
-		loopObject.whileLoop();
+		loopsObject.whileLoop();
 		
 		// Call the doWhileLoop method
-		loopObject.doWhileLoop();
+		loopsObject.doWhileLoop();
 	}
 
 }
