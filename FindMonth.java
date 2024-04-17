@@ -5,21 +5,17 @@ import java.util.Scanner;
  * This program takes number as user input and displays appropriate month in console
  * @author Jayesh Soni
  * @since 2024-04-16
- *
  */
 public class FindMonth {
 
 	public static void main(String[] args) {
-	
 		// Create Scanner Object for user input
-		
 		Scanner scanner = new Scanner(System.in);
-		
+
 		System.out.println("Enter a Number:");
 		int month = scanner.nextInt();
-		
-		// Switch case to find appropriate Month
-		
+
+		// Switch case to find appropriate months
 		switch (month) {
 			case 1:
 				System.out.println("January");
@@ -60,7 +56,7 @@ public class FindMonth {
 			default:
 				System.out.println("Invalid Number! \nPlease enter a number between 1 to 12.");
 				break;
-		}	
+		}
 	}
 
 }
