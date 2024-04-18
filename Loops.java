@@ -43,10 +43,10 @@ public class Loops {
 	public static void main(String[] args) {
 		// Create object of the loops class
 		Loops loopsObject = new Loops();
-		
+
 		// Call the whileLoop method
 		loopsObject.whileLoop();
-		
+
 		// Call the doWhileLoop method
 		loopsObject.doWhileLoop();
 	}
