@@ -2,6 +2,7 @@ package tasks;
 
 /**
  * This program demonstrates the various String methods
+ * 
  * @author Jayesh Soni
  * @since 2024-04-18
  */
@@ -10,7 +11,7 @@ public class StringMethods {
 	public static void main(String[] args) {
 		String str = "Jayesh Soni"; // Initialize String variable
 
-		// Length of String 
+		// Length of String
 		int length = str.length();
 		System.out.println("Length of the String is " + length);
 
@@ -24,7 +25,7 @@ public class StringMethods {
 
 		// Character at specific index
 		char charAt = str.charAt(5);
-		System.out.println("Character at 5th index : " + charAt );
+		System.out.println("Character at 5th index : " + charAt);
 
 		// Set character at specific index
 		StringBuilder strBuilder = new StringBuilder(str); // Create object of StringBuilder from original string
@@ -34,11 +35,11 @@ public class StringMethods {
 
 		// Check if it starts with prefix
 		boolean startsWith = str.startsWith("Jayesh");
-		System.out.println("Is the String starts with \"Jayesh\" = " + startsWith );
+		System.out.println("Is the String starts with \"Jayesh\" = " + startsWith);
 
 		// Check if it ends with suffix
 		boolean endsWith = str.endsWith("Soni");
-		System.out.println("Is the String ends with \"Soni\" = " + endsWith );
+		System.out.println("Is the String ends with \"Soni\" = " + endsWith);
 
 		// Concatenation
 		String secondString = "Qdev"; // Initialize string for concatenate
