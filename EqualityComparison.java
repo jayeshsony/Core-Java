@@ -36,7 +36,7 @@ public class EqualityComparison {
 		System.out.println(int1.equals(int2)); // True because the content is same
 
 		// BigDecimal Comparison
-		BigDecimal bigDecimal1 = new BigDecimal(1.1); 
+		BigDecimal bigDecimal1 = new BigDecimal(1.1);
 		BigDecimal bigDecimal2 = new BigDecimal(1.1);
 		BigDecimal bigDecimal3 = new BigDecimal(1.11);
 
