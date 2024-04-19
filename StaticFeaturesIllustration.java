@@ -35,10 +35,12 @@ public class StaticFeaturesIllustration {
 	}
 
 	public static void main(String[] args) {
+		// Create first object of StaticFeaturesIllustration class
 		StaticFeaturesIllustration firstInstance = new StaticFeaturesIllustration();
 		staticDemoObject1.updateStaticValue();
 		printStaticInfo();
 
+		// Create first object of StaticFeaturesIllustration class
 		StaticFeaturesIllustration secondInstance = new StaticFeaturesIllustration();
 		staticDemoObject2.updateStaticValue();
 		printStaticInfo();
