@@ -11,63 +11,63 @@ public class DemonstrateKeywordUsage {
 	/**
 	 * ParentClass contains one constructor and one method that simply displays
 	 */
-	public static class Parent {
+	public static class ProjectManager {
 
 		// Initialize variable that store message of Parent class
-		final String message = "ParentClass Message";
+		final String message = "Project manager Message";
 
 		// Constructs the ChildClass object
-		Parent() {
-			System.out.println("ParentClass Constructor");
+		ProjectManager() {
+			System.out.println("ProjectManager Constructor");
 		}
 
 		/**
-		 * A method of Parent Class. This method prints message indicating it belongs to
-		 * ParentClass.
+		 * A method of ProjectManager Class. This method prints message indicating it belongs to
+		 * ProjectManager class.
 		 */
-		public void printParentMessage() {
-			System.out.println("ParentClass Method");
+		public void printProjectManagerMessage() {
+			System.out.println("ProjectManager Method");
 		}
 
 	}
 
-	public static class Child extends Parent {
+	public static class Team extends ProjectManager {
 
 		// Initialize variable that store message of Child class
-		final String message = "ChildClass Message";
+		final String message = "Team Message";
 
 		/**
-		 * Constructs the ChildClass Object. It calls the constructor of the ParentClass
+		 * Constructs the Team class object. It calls the constructor of the ProjectManager class
 		 */
-		Child() {
-			super(); // Call the constructor of Parent class
+		Team() {
+			super(); // Call the constructor of ProjectManager class
 			System.out.println("ChildClass Constructor");
 		}
 
 		/**
-		 * A method of ChildClass. This method prints message indicating it belongs to
-		 * ChildClass and also calls the method of parent class.
+		 * A method of Team class. This method prints message indicating it belongs to
+		 * Team class and also calls the method of ProjectManager class.
 		 */
-		public void printChildMessage() {
-			super.printParentMessage(); // Call the method of Parent class
-			System.out.println("ChildClass Method");
+		public void printTeamMessage() {
+			super.printProjectManagerMessage(); // Call the method of ProjectManager class
+			System.out.println("Team Method");
 		}
 
 		/**
-		 * A method of ChildClass. 
+		 * A method of Team class. 
 		 * It demonstrates the use of this and super keyword.
 		 */
 		public void displayMessages() {
-			System.out.println(super.message); // Access the message of Parent class
-			System.out.println(this.message); // Access the message of child class
+			System.out.println(super.message); // Access the message of ProjectManger class
+			System.out.println(this.message); // Access the message of Team class
 		}
 	}
 
 	public static void main(String[] args) {
-		// Create Object of ChildClass
-		Child childInstance = new Child();
-		childInstance.printChildMessage();
-		childInstance.displayMessages();
+		// Create Object of Team class
+		Team teamInstance = new Team();
+		teamInstance.printTeamMessage();
+		teamInstance.displayMessages();
 	}
 
 }
